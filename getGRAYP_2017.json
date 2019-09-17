@@ -1,0 +1,61 @@
+{
+  "pipeline": {
+    "name": "getGRAYP_2017"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/getGRAY2017/GRAY.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "1G"
+  },
+  
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/getGRAY2017.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "calculategray2017Raw",
+          "glob": "/"
+        }
+      },
+      
+      {
+        "pfs": {
+          "repo": "downAnnotations",
+          "glob": "/"
+        }
+      },
+      
+      {
+        "pfs": {
+          "repo": "GRAY2017RawSensitivity",
+          "glob": "/"
+        }
+      },
+      
+      {
+        "pfs": {
+          "repo": "gray2017ProfilesAssemble",
+          "glob": "/"
+        }
+      },
+      
+      {
+        "pfs": {
+          "repo": "downloadrna",
+          "glob": "/"
+        }
+      } 
+    ]
+  }
+}
