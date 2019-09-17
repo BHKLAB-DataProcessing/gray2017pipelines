@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "gray2017ProfilesAssemble"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/gray2017Profiles/assembleData.R"]
+    },
+  "parallelism_spec":{
+    "constant": 1
+  },
+  "resource_requests": {
+    "memory": "1G",
+    "cpu": 0.1
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/gray2017Profiles.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "calculategray2017Raw",
+          "name": "input",
+          "glob": "/"
+        }
+      } 
+    ]
+  }
+}
