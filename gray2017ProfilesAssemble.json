@@ -6,7 +6,7 @@
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/gray2017Profiles/assembleData.R"]
+      "/pfs/gdscAssembleRecalc/assembleData.R"]
     },
   "parallelism_spec":{
     "constant": 1
@@ -19,7 +19,7 @@
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/gray2017Profiles.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/gdscAssembleRecalc.git",
           "name": "",
           "branch": "master"
         }
