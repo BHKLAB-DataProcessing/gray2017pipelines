@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "calculategray2017Raw"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/gray2017RecalculateFromRaw/recalculateSlice.R"]
+    },
+  "parallelism_spec":{
+    "coefficient": 1
+  },
+  "resource_requests": {
+    "memory": "1G",
+    "cpu": 0.1
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/gray2017RecalculateFromRaw.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "GRAY2017RawSensitivity",
+          "name": "input",
+          "glob": "/slices/*"
+        }
+      } 
+    ]
+  }
+}
