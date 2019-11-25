@@ -8,12 +8,8 @@
       "Rscript", 
       "/pfs/gray2017Profiles/assembleData.R"]
     },
-  "parallelism_spec":{
-    "constant": 1
-  },
   "resource_requests": {
-    "memory": "1G",
-    "cpu": 0.1
+    "memory": "1G"
   },
   "input": {
     "cross": [
