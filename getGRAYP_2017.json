@@ -6,7 +6,7 @@
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/getGRAY2017/GRAY.R"]
+      "/pfs/getGRAY2017/GRAY.R", "rna1"]
     },
   
   "resource_requests": {
@@ -52,7 +52,7 @@
       
       {
         "pfs": {
-          "repo": "downloadrna",
+          "repo": "download_gray_molec",
           "glob": "/"
         }
       } 
