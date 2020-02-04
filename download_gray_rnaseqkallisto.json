@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "name": "download_gray_rnaseqkallisto"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadgraykallisto_rnaseq/download_rnaseq.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadgraykallisto_rnaseq.git",
+          "name": "",
+          "branch": "master"
+        }
+      }
+    ]
+  }
+}
