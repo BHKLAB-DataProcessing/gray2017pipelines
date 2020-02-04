@@ -6,11 +6,11 @@
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/getGRAY2017/GRAY.R", "rna1"]
+      "/pfs/getGRAY2017/GRAY.R", "Kallisto-0.46.1", "Gencode_v33", "asdssha742832sb"]
     },
   
   "resource_requests": {
-    "memory": "1G"
+    "memory": "4G"
   },
   
   "input": {
@@ -52,7 +52,7 @@
       
       {
         "pfs": {
-          "repo": "download_gray_molec",
+          "repo": "download_gray_rnaseqkallisto",
           "glob": "/"
         }
       } 
