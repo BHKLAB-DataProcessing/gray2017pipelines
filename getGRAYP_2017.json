@@ -52,7 +52,7 @@
       
       {
         "pfs": {
-          "repo": "download_gray_rnaseqkallisto",
+          "repo": "gray_rnaseq_kallisto_0_46_1",
           "glob": "/"
         }
       } 
