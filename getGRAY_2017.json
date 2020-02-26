@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "getGRAYP_2017"
+    "name": "getGRAY_2017"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
