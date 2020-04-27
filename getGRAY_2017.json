@@ -6,7 +6,7 @@
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/getGRAY2017/GRAY.R", "Kallisto-0.46.1", "Gencode_v33", "asdssha742832sb"]
+      "/pfs/getGRAY2017/GRAY.R", "Kallisto-0.46.1", "Gencode_v33", "sdasdsad662832sb"]
     },
   
   "resource_requests": {
