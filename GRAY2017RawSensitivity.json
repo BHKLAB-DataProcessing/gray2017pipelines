@@ -3,7 +3,7 @@
     "name": "GRAY2017RawSensitivity"
   },
   "transform": {
-    "image": "bhklab/pharmacogx:v3",
+    "image": "bhklab/pharmacogx2.0:v1",
     "cmd": [
       "Rscript", 
       "/pfs/downloadGRAY2017SensRaw/downloadSensData.R"]
