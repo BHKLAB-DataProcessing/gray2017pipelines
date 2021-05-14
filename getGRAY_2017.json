@@ -3,7 +3,7 @@
     "name": "getGRAY_2017"
   },
   "transform": {
-    "image": "bhklab/pharmacogx2.0:v1",
+    "image": "bhklab/pharmacogx2.0:v3",
     "cmd": [
       "Rscript", 
       "/pfs/getGRAY2017/GRAY.R", "Kallisto-0.46.1", "Gencode_v33", "sdasdsad662832sb"]
